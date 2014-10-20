@@ -1,7 +1,11 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-CSharp-firstpass.csproj", "{3214A728-E857-545C-729B-CB0D5F4D20E9}"
+EndProject
 Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-CSharp.csproj", "{B85CC894-C56C-42B5-245C-81AD31B5065B}"
+EndProject
+Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-UnityScript-firstpass.unityproj", "{E2651C2D-F54A-773B-5CBA-743CB88F32F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +13,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3214A728-E857-545C-729B-CB0D5F4D20E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3214A728-E857-545C-729B-CB0D5F4D20E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3214A728-E857-545C-729B-CB0D5F4D20E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3214A728-E857-545C-729B-CB0D5F4D20E9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -35,4 +47,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
