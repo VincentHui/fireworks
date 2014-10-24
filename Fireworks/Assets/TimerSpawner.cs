@@ -18,7 +18,7 @@ public class TimerSpawner : MonoBehaviour {
 			Vector3 t = Camera.main.transform.position + Random.onUnitSphere*10;
 			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.identity);
            
-			g.transform.parent = this.transform.parent;
+			g.transform.parent = this.transform;
             g.transform.LookAt(Camera.main.transform.position);
 			timer = timerMax;
             Debug.DrawRay(g.transform.position, g.transform.forward,Color.yellow,9999999);

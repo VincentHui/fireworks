@@ -34,7 +34,11 @@ function LateUpdate() {
  		}
  		}
  		if(_shootSound.Length > 0 && particles[i].lifetime >= particles[i].startLifetime-Time.deltaTime){
- 			SoundController.instance.Play(_shootSound[Random.Range(0, _shootSound.Length)], Random.Range(_shootVolumeMax,_shootVolumeMin), Random.Range(_shootPitchMin,_shootPitchMax), particles[i].position);
+ 			SoundController.instance.Play(
+ 			_shootSound[Random.Range(0, _shootSound.Length)], 
+ 			Random.Range(_shootVolumeMax,_shootVolumeMin), 
+ 			Random.Range(_shootPitchMin,_shootPitchMax), 
+ 			particles[i].position);
 
 		}
 		i++;
