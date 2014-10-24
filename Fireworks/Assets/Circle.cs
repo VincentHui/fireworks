@@ -4,7 +4,7 @@ using System.Collections;
 public class Circle : MonoBehaviour {
 
 	// Use this for initialization
-    public Vector3 axis = new Vector3(0, 1, 0);
+    public Vector3 axis = new Vector3(0, 0, 1);
     public float timeStamp;
     public float AmountOfTime = 1;   
 	void Start () {
@@ -13,14 +13,13 @@ public class Circle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        float angle = (Time.time - timeStamp) / AmountOfTime * Mathf.PI*2;
-        transform.Rotate(axis, angle);
-       
+        float angle = -((Time.time - timeStamp) / AmountOfTime) *360.0f;
+        transform.localRotation = Quaternion.AngleAxis(angle,axis);     
         if (Time.time- timeStamp>(AmountOfTime))
         {
-
-         
-          Destroy(this);
+            transform.GetComponentInChildren<TrailRenderer>().time = 1.0f;
+            transform.GetComponentInChildren<TrailRenderer>().materials[0].color = Color.red;
+            this.enabled = false;
         }
 	}
 }

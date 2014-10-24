@@ -16,9 +16,12 @@ public class TimerSpawner : MonoBehaviour {
 		if (timer <= 0) 
 		{
 			Vector3 t = Camera.main.transform.position + Random.onUnitSphere*10;
-			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.LookRotation(-(t- Camera.main.transform.position)));
+			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.identity);
+           
 			g.transform.parent = this.transform.parent;
+            g.transform.LookAt(Camera.main.transform.position);
 			timer = timerMax;
+            Debug.DrawRay(g.transform.position, g.transform.forward,Color.yellow,9999999);
 		}
 	}
 }
