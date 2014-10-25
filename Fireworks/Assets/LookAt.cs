@@ -27,6 +27,7 @@ public class LookAt : MonoBehaviour {
     void makeFirework(GameObject hit)
     {
         GameObject.Instantiate(_fireworks[Random.Range(0, _fireworks.Length)], new Vector3(hit.transform.position.x, -30.0f, hit.transform.position.z), Quaternion.identity);
+        
         Debug.Log("made firework");
     }
 }
