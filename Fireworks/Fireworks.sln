@@ -9,6 +9,8 @@ Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-Unity
 EndProject
 Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-UnityScript.unityproj", "{BA4C274F-7958-46F6-76B2-4BA4AC169868}"
 EndProject
+Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-UnityScript-Editor.unityproj", "{6043DE78-2C23-A915-490C-846B4E8E815B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,11 +33,15 @@ Global
 		{BA4C274F-7958-46F6-76B2-4BA4AC169868}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4C274F-7958-46F6-76B2-4BA4AC169868}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4C274F-7958-46F6-76B2-4BA4AC169868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6043DE78-2C23-A915-490C-846B4E8E815B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6043DE78-2C23-A915-490C-846B4E8E815B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6043DE78-2C23-A915-490C-846B4E8E815B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6043DE78-2C23-A915-490C-846B4E8E815B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-							GlobalSection(MonoDevelopProperties) = preSolution
+																				GlobalSection(MonoDevelopProperties) = preSolution
 =======
 				GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> .r4
