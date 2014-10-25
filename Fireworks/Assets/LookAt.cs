@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class LookAt : MonoBehaviour {
     GameObject[] _fireworks;
+
+    public float test = 0;
+
 	// Use this for initialization
 	void Start () {
         _fireworks = Resources.LoadAll<GameObject>("Fireworks");
@@ -18,16 +21,27 @@ public class LookAt : MonoBehaviour {
 		RaycastHit hit = new RaycastHit ();
 		if(Physics.Raycast(r, out hit, 50))
 		{
-            makeFirework(hit.transform.gameObject);
-            GameObject.Destroy(hit.transform.gameObject);
-           
+            makeFirework(hit.transform.gameObject);           
 		}
 	}
 
     void makeFirework(GameObject hit)
     {
-        GameObject.Instantiate(_fireworks[Random.Range(0, _fireworks.Length)], new Vector3(hit.transform.position.x, -30.0f, hit.transform.position.z), Quaternion.identity);
-        
+        GameObject go = (GameObject)GameObject.Instantiate(_fireworks[Random.Range(0, _fireworks.Length)], new Vector3(hit.transform.position.x, 0, hit.transform.position.z), Quaternion.identity);
+
+        ParticleSystem ps = go.GetComponent<ParticleSystem>();
+
+        ps.startLifetime = hit.transform.position.y / 90;
+        test = hit.transform.position.y; 
+
+        //ParticleSystem.Particle[] particles = new ParticleSystem.Particle[ps.particleCount];
+
+        //ps.GetParticles(particles);
+
+        //particles[0].lifetime = hit.transform.position.y / 90;
+
+
+        GameObject.Destroy(hit.transform.gameObject);
         Debug.Log("made firework");
     }
 }

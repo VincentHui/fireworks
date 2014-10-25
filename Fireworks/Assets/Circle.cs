@@ -22,7 +22,7 @@ public class Circle : MonoBehaviour
         {
             transform.GetComponentInChildren<TrailRenderer>().time = 1.0f;
             transform.GetComponentInChildren<TrailRenderer>().materials[0].color = Color.red;
-            this.enabled = false;
+            Destroy(transform.parent.gameObject);
         }
     }
 }

@@ -19,8 +19,6 @@ public class TimerSpawner : MonoBehaviour {
 			offset.y = Mathf.Abs(offset.y);
 			Vector3 t = Camera.main.transform.position + offset;
 			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.identity);
-
-
            
 			g.transform.parent = this.transform;
             g.transform.LookAt(Camera.main.transform.position);
