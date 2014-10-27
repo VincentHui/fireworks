@@ -15,9 +15,10 @@ public class LookAt : MonoBehaviour {
     
 	// Update is called once per frame
 	void Update () {
-		Ray r = new Ray (this.transform.position, transform.TransformDirection (Vector3.forward * 10));
+		Ray r = new Ray (this.transform.position, transform.TransformDirection (Vector3.forward)*20);
 
-		Debug.DrawRay (this.transform.position, transform.TransformDirection (Vector3.forward));
+		Debug.DrawRay (this.transform.position, transform.TransformDirection (Vector3.forward)*20)
+          ;
 		RaycastHit hit = new RaycastHit ();
 		if(Physics.Raycast(r, out hit, 50))
 		{

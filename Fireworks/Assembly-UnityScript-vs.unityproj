@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Dive\DiveFPSController.js" />
+     <Compile Include="Assets\FireworksPlugin\Scripts\GameObjectSpawner.js" />
+     <Compile Include="Assets\FireworksPlugin\Scripts\ParticleSystemSound.js" />
+     <Compile Include="Assets\FireworksPlugin\Scripts\SoundController.js" />
+     <None Include="Assets\FireworksPlugin\Scripts\Simple Particle Scale\Simple Particle Scale - Readme.txt" />
+     <None Include="Assets\FireworksPlugin\Fireworks - Readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Thomas/Desktop/fireworks/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

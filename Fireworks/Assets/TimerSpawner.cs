@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TimerSpawner : MonoBehaviour {
 	public GameObject lookable;
+    public Vector3 prevOffset = Vector3.zero;
 	// Use this for initialization
 	void Start () {
 		timer = timerMax;
@@ -15,7 +16,7 @@ public class TimerSpawner : MonoBehaviour {
 		timer -= Time.deltaTime;
 		if (timer <= 0) 
 		{
-			Vector3 offset = Random.onUnitSphere*20;
+			Vector3 offset = Vector3.Normalize((prevOffset)+ Random.onUnitSphere*Random.Range(5,15))*20;
 			offset.y = Mathf.Abs(offset.y);
 			Vector3 t = Camera.main.transform.position + offset;
 			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.identity);
@@ -24,6 +25,7 @@ public class TimerSpawner : MonoBehaviour {
             g.transform.LookAt(Camera.main.transform.position);
 			timer = timerMax;
             Debug.DrawRay(g.transform.position, g.transform.forward,Color.yellow,9999999);
+            prevOffset = offset;
 		}
 	}
 }

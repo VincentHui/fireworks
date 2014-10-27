@@ -47,9 +47,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Circle.cs" />
+     <Compile Include="Assets\DestroyParticleSystem.cs" />
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
+     <Compile Include="Assets\FireworksPlugin\Scripts\SmoothCameraOrbit.cs" />
      <Compile Include="Assets\LookAt.cs" />
+     <Compile Include="Assets\Stars.cs" />
      <Compile Include="Assets\TimerSpawner.cs" />
+     <None Include="Assets\FireworksPlugin\Scripts\Simple Particle Scale\Simple Particle Scale - Readme.txt" />
+     <None Include="Assets\FireworksPlugin\Fireworks - Readme.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Thomas/Desktop/fireworks/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
