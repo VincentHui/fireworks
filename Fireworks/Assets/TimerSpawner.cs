@@ -18,6 +18,7 @@ public class TimerSpawner : MonoBehaviour {
 		{
 			Vector3 offset = Vector3.Normalize((prevOffset)+ Random.onUnitSphere*Random.Range(5,15))*20;
 			offset.y = Mathf.Abs(offset.y);
+            offset.y /= 2;
 			Vector3 t = Camera.main.transform.position + offset;
 			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.identity);
            
