@@ -6,16 +6,14 @@ public class LookAt : MonoBehaviour {
     GameObject[] _fireworks;
 
     public float test = 0;
-	public int CountdownToLogo = 1;
-	private int countdown;
 
-	public GameObject logo;
+
 	// Use this for initialization
 	void Start () {
         _fireworks = Resources.LoadAll<GameObject>("Fireworks");
-        Debug.Log(_fireworks.Length);
-		logo.renderer.material.color = new Color (1, 1, 1, 0);
-		countdown = CountdownToLogo;
+ 
+	
+	
 	}
     
 	// Update is called once per frame
@@ -29,39 +27,10 @@ public class LookAt : MonoBehaviour {
 		{
             makeFirework(hit.transform.gameObject);    
 
-			countdown--;
-
-			if(countdown<=0)
-			{
-
-				//begin the logo fade in
-				StartCoroutine("fadeIn");
-				countdown = CountdownToLogo;
-			}
 		}
 	}
 
-	IEnumerator fadeIn()
-	{
-		// fade in
-		for (int i = 0; i < 10; i++) {	
-			Color c= logo.renderer.material.color;
-			c.a = i/10.0f;
-			logo.renderer.material.color = c;
-			Debug.Log ("showing logo: " + i);			
-			yield return new WaitForSeconds (0.1f);
-
-		}
-
-		// fade out
-		for (int i = 10 - 1; i >= 0; i--) {
-			Color c= logo.renderer.material.color;
-			c.a = i/10.0f;
-			logo.renderer.material.color = c;
-			Debug.Log ("showing logo: " + i);			
-			yield return new WaitForSeconds (0.1f);
-		}
-	}
+	
 
 
     void makeFirework(GameObject hit)
