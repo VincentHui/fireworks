@@ -61,7 +61,8 @@ public class ALPSGyro : MonoBehaviour {
             gyro = Input.gyro;
             gyro.enabled = true;
 
-            rotFix = new Quaternion(0, 0, 0.7071f, 0.7071f);
+            rotFix = Quaternion.Euler(new Vector3(0, 0, 180));
+          
         }
         else
         {
@@ -83,7 +84,7 @@ public class ALPSGyro : MonoBehaviour {
 #if UNITY_WP_8_1
         if (gyroBool)
         {
-            var camRot = gyro.attitude * rotFix;
+            var camRot = gyro.attitude *rotFix;
             transform.eulerAngles = initial;
             transform.localRotation *= camRot;
         }

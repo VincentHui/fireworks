@@ -70,7 +70,6 @@ public class ALPSNavigation : MonoBehaviour {
 		controller = this.gameObject.GetComponent ("CharacterController") as CharacterController;
 		this.gameObject.AddComponent <CharacterMotor>();
 		head = GameObject.Find ("ALPSHead");
-        
 		if (Application.platform == RuntimePlatform.Android) {
 			moving = false;
 		}
