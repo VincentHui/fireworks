@@ -17,7 +17,7 @@ public class TimerSpawner : MonoBehaviour {
 		timer -= Time.deltaTime;
 		if (timer <= 0) 
 		{
-			Vector3 offset = Vector3.Normalize((prevOffset)+ Random.onUnitSphere*Random.Range(5,15))*dist;
+			Vector3 offset = Vector3.Normalize((prevOffset)+ Random.onUnitSphere*Random.Range(50,150))*dist;
 			offset.y = Mathf.Abs(offset.y);
             offset.y /= 2;
 			Vector3 t = Camera.main.transform.position + offset;

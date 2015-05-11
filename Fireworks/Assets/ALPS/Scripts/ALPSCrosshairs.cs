@@ -38,6 +38,7 @@ public class ALPSCrosshairs : MonoBehaviour {
 	private bool leftEye;
 	private Texture2D  arc;
 	private Texture2D  bar;
+    private Texture2D crosshair;
 
 	//=====================================================================================================
 	// Functions
@@ -50,10 +51,10 @@ public class ALPSCrosshairs : MonoBehaviour {
 		leftEye = GetComponent<ALPSCamera> ().leftEye;
 		arc = Resources.Load ("Textures/arcs") as Texture2D ;
 		bar = Resources.Load ("Textures/progress_point") as Texture2D ;
-		
+        crosshair = Resources.Load("Textures/crosshair") as Texture2D;
 		centerIPD = new Vector2 (ALPSController.screenWidthPix*0.5f + ((leftEye?-1:1) * ((deviceConfig.IPD <= deviceConfig.Width * 0.5f)?deviceConfig.GetIPDPixels()*0.5f:ALPSController.screenWidthPix*0.25f)) ,ALPSController.screenHeightPix * 0.5f);
 		centerGUI = new Vector2(centerIPD.x-(arc.width * 0.5f),centerIPD.y-(arc.height * 0.5f));
-		centerGUIBar = new Vector2(centerIPD.x-(bar.width * 0.5f),centerIPD.y-(bar.height * 0.5f));
+        centerGUIBar = new Vector2(centerIPD.x - ((crosshair.width) * 0.5f), centerIPD.y - (crosshair.height * 0.5f));
 	}
 
 	/// <summary>
@@ -62,15 +63,17 @@ public class ALPSCrosshairs : MonoBehaviour {
 	public void UpdateCrosshairs(){
 		centerIPD = new Vector2 (ALPSController.screenWidthPix*0.5f + ((leftEye?-1:1) * ((deviceConfig.IPD <= deviceConfig.Width * 0.5f)?deviceConfig.GetIPDPixels()*0.5f:ALPSController.screenWidthPix*0.25f)) ,ALPSController.screenHeightPix * 0.5f);
 		centerGUI = new Vector2(centerIPD.x-(arc.width * 0.5f),centerIPD.y-(arc.height * 0.5f));
-		centerGUIBar = new Vector2(centerIPD.x-(bar.width * 0.5f),centerIPD.y-(bar.height * 0.5f));
+        centerGUIBar = new Vector2(centerIPD.x - ((crosshair.width) * 0.5f), centerIPD.y - (crosshair.height * 0.5f));
 	}
 
 	/// <summary>
 	/// Paints the crosshairs. 
 	/// </summary>
 	public void OnGUI(){
-		GUI.DrawTexture(new Rect(centerGUI.x,centerGUI.y,arc.width,arc.height),arc,ScaleMode.ScaleToFit, true, 0f);
-		centerGUIBar = new Vector2(centerIPD.x-((arc.width-4)*ALPSNavigation.Progress() * 0.5f),centerIPD.y-(bar.height * 0.5f));
-		GUI.DrawTexture(new Rect(centerGUIBar.x,centerGUIBar.y,(arc.width-4)*ALPSNavigation.Progress(),bar.height),bar,ScaleMode.StretchToFill, true, 0f);
-	}
+        float scale = 0.25f;
+       // GUI.DrawTexture(new Rect(centerGUI.x, centerGUI.y, arc.width * scale, arc.height * scale), arc, ScaleMode.StretchToFill, true, 0f);
+        centerGUIBar = new Vector2(centerIPD.x - ((crosshair.width *scale) * 0.5f), centerIPD.y - ((crosshair.height*scale) * 0.5f));
+        GUI.DrawTexture(new Rect(centerGUIBar.x, centerGUIBar.y, (crosshair.width)  * scale, crosshair.height * scale), crosshair, ScaleMode.StretchToFill, true, 0f);
+        
+    }
 }

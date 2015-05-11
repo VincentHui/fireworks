@@ -24,10 +24,10 @@ public class Circle : MonoBehaviour
 
            // transform.GetComponentInChildren<TrailRenderer>().materials[0].color = new Color(1, 0, 0, 1 - (Time.time - AmountOfTime - timeStamp));
         }
-        if (Time.time - timeStamp - 1 > (AmountOfTime))
+        if (Time.time - timeStamp  > (AmountOfTime))
         {
 
-           // Destroy(transform.parent.gameObject);
+            Destroy(transform.parent.gameObject);
         }
 
 

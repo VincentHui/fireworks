@@ -73,7 +73,7 @@ public class ALPSController : MonoBehaviour {
 		head = new GameObject ("ALPSHead");
 		head.transform.parent = transform;
 		head.transform.position = transform.position;
-        head.AddComponent<LookAt>();
+       
 		#if UNITY_EDITOR
 			head.AddComponent<MouseLook>();
 			screenWidthPix = Screen.width;
@@ -141,7 +141,8 @@ public class ALPSController : MonoBehaviour {
 
 		cameraLeft.gameObject.AddComponent<ALPSCrosshairs>();
 		cameraRight.gameObject.AddComponent<ALPSCrosshairs>();
-
+        cameraLeft.AddComponent<LookAt>();
+        cameraRight.AddComponent<LookAt>();
 		AudioListener[] listeners = FindObjectsOfType(typeof(AudioListener)) as AudioListener[];
 		if (listeners.Length < 1) {
 			gameObject.AddComponent <AudioListener>();
