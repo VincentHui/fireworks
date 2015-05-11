@@ -5,6 +5,8 @@ Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-CShar
 EndProject
 Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-CSharp.csproj", "{B85CC894-C56C-42B5-245C-81AD31B5065B}"
 EndProject
+Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-CSharp-Editor.csproj", "{46322095-0E73-FCEB-10B4-EA52464A4F3F}"
+EndProject
 Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-UnityScript-firstpass.unityproj", "{E2651C2D-F54A-773B-5CBA-743CB88F32F5}"
 EndProject
 Project("{10721D3E-E4B8-C50A-7103-D523BFCFAC43}") = "Fireworks", "Assembly-UnityScript.unityproj", "{BA4C274F-7958-46F6-76B2-4BA4AC169868}"
@@ -25,6 +27,10 @@ Global
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B85CC894-C56C-42B5-245C-81AD31B5065B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46322095-0E73-FCEB-10B4-EA52464A4F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46322095-0E73-FCEB-10B4-EA52464A4F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46322095-0E73-FCEB-10B4-EA52464A4F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46322095-0E73-FCEB-10B4-EA52464A4F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2651C2D-F54A-773B-5CBA-743CB88F32F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,7 +47,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																					GlobalSection(MonoDevelopProperties) = preSolution
+																																										GlobalSection(MonoDevelopProperties) = preSolution
 =======
 				GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> .r4

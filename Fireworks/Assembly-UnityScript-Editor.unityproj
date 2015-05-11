@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Fireworks\Scripts\Simple Particle Scale\Scripts\Editor\ParticleScaler.js" />
+     <None Include="Assets\ALPS\LICENSE.txt" />
      <None Include="Assets\Fireworks\Scripts\Simple Particle Scale\Simple Particle Scale - Readme.txt" />
      <None Include="Assets\Fireworks\Scripts\C# Scripts\- IMPORTANT - Version Change Readme.txt" />
+     <None Include="Assets\ALPS\Shaders\ALPSDistortion.shader" />
      <None Include="Assets\Fireworks\Fireworks - Readme.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

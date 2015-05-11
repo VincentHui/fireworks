@@ -46,18 +46,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ALPS\Scripts\ALPSAndroid.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSBarrelMesh.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSCamera.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSConfig.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSController.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSControllerLight.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSCrosshairs.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSDevice.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSGUI.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSGyro.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSNavigation.cs" />
+     <Compile Include="Assets\ALPS\Scripts\ALPSWP8.cs" />
+     <Compile Include="Assets\ALPS\Scripts\MagnetSensor.cs" />
      <Compile Include="Assets\Circle.cs" />
      <Compile Include="Assets\DestroyParticleSystem.cs" />
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
      <Compile Include="Assets\Fireworks\Scripts\Demo\SmoothCameraOrbit.cs" />
      <Compile Include="Assets\LookAt.cs" />
+     <Compile Include="Assets\Scripts\RotateObject.cs" />
      <Compile Include="Assets\Stars.cs" />
      <Compile Include="Assets\TimerSpawner.cs" />
+     <None Include="Assets\ALPS\LICENSE.txt" />
      <None Include="Assets\Fireworks\Scripts\Simple Particle Scale\Simple Particle Scale - Readme.txt" />
      <None Include="Assets\Fireworks\Scripts\C# Scripts\- IMPORTANT - Version Change Readme.txt" />
+     <None Include="Assets\ALPS\Shaders\ALPSDistortion.shader" />
      <None Include="Assets\Fireworks\Fireworks - Readme.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Thomas/Desktop/fireworks/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Thomas/Desktop/fireworks3/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

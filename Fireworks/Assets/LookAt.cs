@@ -18,12 +18,12 @@ public class LookAt : MonoBehaviour {
     
 	// Update is called once per frame
 	void Update () {
-		Ray r = new Ray (this.transform.position, transform.TransformDirection (Vector3.forward)*20);
+		Ray r = new Ray (this.transform.position, transform.TransformDirection (Vector3.forward)*200);
 
-		Debug.DrawRay (this.transform.position, transform.TransformDirection (Vector3.forward)*20)
+		Debug.DrawRay (this.transform.position, transform.TransformDirection (Vector3.forward)*200)
           ;
 		RaycastHit hit = new RaycastHit ();
-		if(Physics.Raycast(r, out hit, 50))
+		if(Physics.Raycast(r, out hit, 500))
 		{
             makeFirework(hit.transform.gameObject);    
 
@@ -35,11 +35,11 @@ public class LookAt : MonoBehaviour {
 
     void makeFirework(GameObject hit)
     {
-        GameObject go = (GameObject)GameObject.Instantiate(_fireworks[Random.Range(0, _fireworks.Length)], new Vector3(hit.transform.position.x, 0, hit.transform.position.z), Quaternion.identity);
+        GameObject go = (GameObject)GameObject.Instantiate(_fireworks[Random.Range(0, _fireworks.Length)], new Vector3(hit.transform.position.x, -90, hit.transform.position.z), Quaternion.identity);
 
         ParticleSystem ps = go.GetComponent<ParticleSystem>();
 
-        ps.startLifetime = hit.transform.position.y / 90;
+        ps.startLifetime = (hit.transform.position.y+90) / 90;
         test = hit.transform.position.y; 
 
         //ParticleSystem.Particle[] particles = new ParticleSystem.Particle[ps.particleCount];
