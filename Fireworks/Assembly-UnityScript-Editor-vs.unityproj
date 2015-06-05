@@ -54,10 +54,10 @@
      <None Include="Assets\Fireworks\Fireworks - Readme.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Thomas/Desktop/fireworks3/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Thomas/Desktop/fireworks/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Thomas/Desktop/fireworks3/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/Thomas/Desktop/fireworks/trunk/Fireworks/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
