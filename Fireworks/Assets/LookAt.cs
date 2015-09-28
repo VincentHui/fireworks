@@ -6,13 +6,13 @@ public class LookAt : MonoBehaviour {
     GameObject[] _fireworks;
     GameObject menu;
     public float test = 0;
-  
+    CrowdController CC;
 
 	// Use this for initialization
 	void Start () {
         _fireworks = Resources.LoadAll<GameObject>("Fireworks");
         menu = GameObject.Find("menu");
-	
+        CC = GameObject.Find("Crowd").GetComponent<CrowdController>();
 	
 	}
     
@@ -27,8 +27,8 @@ public class LookAt : MonoBehaviour {
 		RaycastHit hit = new RaycastHit ();
 		if(Physics.Raycast(r, out hit, 500))
 		{
-            makeFirework(hit.transform.gameObject,ref play,ref exit);    
-
+            makeFirework(hit.transform.gameObject,ref play,ref exit);
+            CC.Cheer();
 		}
         if (menu)
         {
@@ -49,6 +49,8 @@ public class LookAt : MonoBehaviour {
 
     void makeFirework(GameObject hit,ref bool play, ref bool exit)
     {
+        if (!hit || !hit.GetComponentInChildren<Circle>()) return;
+
         if (hit.GetComponentInChildren<Circle>().play)
         {
             play = true;
