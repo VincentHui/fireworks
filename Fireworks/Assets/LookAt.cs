@@ -51,6 +51,9 @@ public class LookAt : MonoBehaviour {
     {
         if (!hit || !hit.GetComponentInChildren<Circle>()) return;
 
+        hit.GetComponent<SphereCollider>().enabled = false;
+        hit.GetComponentInChildren<Circle>().Poof();
+
         if (hit.GetComponentInChildren<Circle>().play)
         {
             play = true;
@@ -74,8 +77,6 @@ public class LookAt : MonoBehaviour {
 
         //particles[0].lifetime = hit.transform.position.y / 90;
 
-
-        GameObject.Destroy(hit.transform.gameObject);
         Debug.Log("made firework");
     }
 }

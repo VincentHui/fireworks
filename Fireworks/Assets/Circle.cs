@@ -19,17 +19,17 @@ public class Circle : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    {
-         
+    {         
         if (paused)
         {
             return;
         }
-        float angle = -((Time.time - timeStamp) / AmountOfTime) * 360.0f;
-        transform.localRotation = Quaternion.AngleAxis(angle, axis);       
+        //float angle = -((Time.time - timeStamp) / AmountOfTime) * 360.0f;
+        //transform.localRotation = Quaternion.AngleAxis(angle, axis);       
         if (Time.time - timeStamp  > (AmountOfTime))
         {
-            Destroy(transform.parent.gameObject);
+            StartCoroutine(Delete());
+            //Destroy(transform.parent.gameObject);
             if (exit)
             {
                 Application.Quit();               
@@ -39,20 +39,37 @@ public class Circle : MonoBehaviour
                 Application.LoadLevel("AlexScene");                
             }
         }
+    }
 
-    }
-    public void Reset()
+    public void Poof()
     {
-     
-        timeStamp = Time.time;      
-        StartCoroutine(ResetTrail(GetComponentInChildren<TrailRenderer>()));
+        StartCoroutine(Delete());
+
+        foreach(ParticleSystem sys in GetComponentsInChildren<ParticleSystem>())
+        {
+            sys.startSpeed = 2;
+            sys.enableEmission = false;
+            sys.playbackSpeed = 3;
+        }
     }
+
+    public void Reset()
+    {     
+        timeStamp = Time.time;      
+        //StartCoroutine(ResetTrail(GetComponentInChildren<TrailRenderer>()));
+    }
+
     static IEnumerator ResetTrail(TrailRenderer trail)
     {
-
         trail.time = 0;
         yield return new WaitForEndOfFrame(); 
-        trail.time = 5;
-   
+        trail.time = 5;  
     } 
+
+    IEnumerator Delete()
+    {
+        yield return new WaitForSeconds(5);
+
+        Destroy(transform.parent.gameObject);
+    }
 }
