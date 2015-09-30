@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Circle : MonoBehaviour
 {
-
     // Use this for initialization
     public Vector3 axis = new Vector3(0, 0, 1);
     public float timeStamp;
@@ -12,6 +11,7 @@ public class Circle : MonoBehaviour
     public bool play = false;
     public bool lookedAt = false;
     bool paused = false;
+
     void Start()
     {
         timeStamp = Time.time;
