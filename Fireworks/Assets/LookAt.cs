@@ -9,15 +9,16 @@ public class LookAt : MonoBehaviour {
     CrowdController CC;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         _fireworks = Resources.LoadAll<GameObject>("Fireworks");
         menu = GameObject.Find("menu");
-        CC = GameObject.Find("Crowd").GetComponent<CrowdController>();
-	
+        CC = GameObject.Find("Crowd").GetComponent<CrowdController>();	
 	}
     
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate () 
+    {
         bool play = false;
         bool exit = false;
 		Ray r = new Ray (this.transform.position, transform.TransformDirection (Vector3.forward)*200);
@@ -25,6 +26,7 @@ public class LookAt : MonoBehaviour {
 		Debug.DrawRay (this.transform.position, transform.TransformDirection (Vector3.forward)*200);
         
 		RaycastHit hit = new RaycastHit ();
+
 		if(Physics.Raycast(r, out hit, 500))
 		{
             makeFirework(hit.transform.gameObject,ref play,ref exit);
@@ -42,10 +44,6 @@ public class LookAt : MonoBehaviour {
             }
         }
 	}
-
-   
-	
-
 
     void makeFirework(GameObject hit,ref bool play, ref bool exit)
     {
@@ -76,7 +74,5 @@ public class LookAt : MonoBehaviour {
         //ps.GetParticles(particles);
 
         //particles[0].lifetime = hit.transform.position.y / 90;
-
-        Debug.Log("made firework");
     }
 }
