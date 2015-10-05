@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Fireworks.CSharp", "UnityVS.Fireworks.CSharp.csproj", "{DB5CE0BB-EDDF-40FA-B237-7A8D05BEC480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Fireworks.CSharp.Plugins", "UnityVS.Fireworks.CSharp.Plugins.csproj", "{2A7069B4-C173-0000-DD51-9E3DC245AA36}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Fireworks.CSharp.Editor", "UnityVS.Fireworks.CSharp.Editor.csproj", "{ECD2EE68-070F-D330-62B6-DA5363149DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Fireworks.CSharp.Plugins", "UnityVS.Fireworks.CSharp.Plugins.csproj", "{2A7069B4-C173-0000-DD51-9E3DC245AA36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,14 @@ Global
 		{DB5CE0BB-EDDF-40FA-B237-7A8D05BEC480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5CE0BB-EDDF-40FA-B237-7A8D05BEC480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB5CE0BB-EDDF-40FA-B237-7A8D05BEC480}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ECD2EE68-070F-D330-62B6-DA5363149DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ECD2EE68-070F-D330-62B6-DA5363149DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECD2EE68-070F-D330-62B6-DA5363149DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECD2EE68-070F-D330-62B6-DA5363149DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7069B4-C173-0000-DD51-9E3DC245AA36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
