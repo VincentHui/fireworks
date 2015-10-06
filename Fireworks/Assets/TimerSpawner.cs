@@ -37,7 +37,7 @@ public class TimerSpawner : MonoBehaviour {
 
             Vector3 t = offset;//transform.position + offset;
 			GameObject g = (GameObject)GameObject.Instantiate(lookable, t, Quaternion.identity);
-           
+            g.layer = 8;
 			g.transform.parent = this.transform;
             g.transform.LookAt(Head.transform.position);
 			timer = timerMax;

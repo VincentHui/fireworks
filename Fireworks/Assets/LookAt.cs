@@ -21,13 +21,15 @@ public class LookAt : MonoBehaviour {
     {
         bool play = false;
         bool exit = false;
+        int layerMask = 1 << 8;
+
 		Ray r = new Ray (this.transform.position, transform.TransformDirection (Vector3.forward)*200);
 
 		Debug.DrawRay (this.transform.position, transform.TransformDirection (Vector3.forward)*200);
         
 		RaycastHit hit = new RaycastHit ();
 
-		if(Physics.Raycast(r, out hit, 500))
+		if(Physics.Raycast(r, out hit, 500, layerMask))
 		{
             makeFirework(hit.transform.gameObject,ref play,ref exit);
             CC.Cheer();
