@@ -314,6 +314,7 @@ public class StereoController : MonoBehaviour {
   void OnPreCull() {
     if (!Cardboard.SDK.VRModeEnabled) {
       // Nothing to do.
+        Debug.Log("reached");
       return;
     }
 
