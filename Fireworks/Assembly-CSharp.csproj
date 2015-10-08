@@ -130,6 +130,7 @@
      <Compile Include="Assets\LookAt.cs" />
      <Compile Include="Assets\MenuManager.cs" />
      <Compile Include="Assets\Scripts\AnimationState.cs" />
+     <Compile Include="Assets\Scripts\DeleteDelay.cs" />
      <Compile Include="Assets\Scripts\FadingAudioSource.cs" />
      <Compile Include="Assets\Stars.cs" />
      <Compile Include="Assets\TimerSpawner.cs" />
