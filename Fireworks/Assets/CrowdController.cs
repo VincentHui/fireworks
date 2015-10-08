@@ -26,6 +26,8 @@ public class CrowdController : MonoBehaviour
         {
             transform.GetChild(i).LookAt(new Vector3(Head.transform.position.x, transform.GetChild(i).position.y, Head.transform.position.z));
         }
+
+        RandomAnimationPos();
     }
 
     void FixedUpdate()
@@ -47,7 +49,7 @@ public class CrowdController : MonoBehaviour
             {
                 Cheering = true;
 
-                StartCoroutine(StartAnimation(0.5f));
+                Invoke("StartAnimation", 0.5f);
             }
 
             StartCoroutine(playHappyCrowd(1, 0));
@@ -63,13 +65,20 @@ public class CrowdController : MonoBehaviour
         anim[thisAnimation].time = Random.Range(0f, 3f);
     }
 
-    IEnumerator StartAnimation(float delay)
+    void RandomAnimationPos()
     {
-        yield return new WaitForSeconds(delay);
-
         foreach (Animator anim in AudienceAnims)
         {
-            anim.SetTrigger("Play");
+            AnimatorStateInfo state = anim.GetCurrentAnimatorStateInfo(0);
+            anim.Play(state.fullPathHash, -1, Random.value);
+        }
+    }
+
+    void StartAnimation()
+    {
+        foreach (Animator anim in AudienceAnims)
+        {
+            anim.SetTrigger("Play");            
         }
     }
 
@@ -93,7 +102,7 @@ public class CrowdController : MonoBehaviour
         source.clip = CrowdNoises[Random.Range(0, CrowdNoises.Count - 1)];
         source.PlayScheduled(time);
 
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(3.0f);
 
         Cheering = false;
     }
