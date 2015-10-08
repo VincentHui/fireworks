@@ -8,7 +8,7 @@ public class DeleteDelay : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        StartCoroutine(DeleteAfterDelay(delay));
+        Invoke("DeleteAfterDelay", delay);
 	}
 	
 	// Update is called once per frame
@@ -17,10 +17,8 @@ public class DeleteDelay : MonoBehaviour
 	
 	}
 
-    IEnumerator DeleteAfterDelay(float time)
+    void DeleteAfterDelay()
     {
-        yield return new WaitForSeconds(time);
-
         Destroy(gameObject);
     }
 }
