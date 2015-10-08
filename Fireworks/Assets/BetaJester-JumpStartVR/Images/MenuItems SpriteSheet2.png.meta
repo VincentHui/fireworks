@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: a40753069f721674f8895be8310e92ad
+timeCreated: 1434915326
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MenuItems SpriteSheet2_0
+    21300002: MenuItems SpriteSheet2_1
+    21300004: MenuItems SpriteSheet2_2
+    21300006: MenuItems SpriteSheet2_3
+    21300008: MenuItems SpriteSheet2_4
+    21300010: MenuItems SpriteSheet2_5
+    21300012: MenuItems SpriteSheet2_6
+    21300014: MenuItems SpriteSheet2_7
+    21300016: MenuItems SpriteSheet2_8
+    21300018: MenuItems SpriteSheet2_9
+    21300020: MenuItems SpriteSheet2_10
+    21300022: MenuItems SpriteSheet2_11
+    21300024: MenuItems SpriteSheet2_12
+    21300026: MenuItems SpriteSheet2_13
+    21300028: MenuItems SpriteSheet2_14
+    21300030: MenuItems SpriteSheet2_15
+    21300032: MenuItems SpriteSheet2_16
+    21300034: MenuItems SpriteSheet2_17
+    21300036: MenuItems SpriteSheet2_18
+    21300038: MenuItems SpriteSheet2_19
+    21300040: MenuItems SpriteSheet2_20
+    21300042: MenuItems SpriteSheet2_21
+    21300044: MenuItems SpriteSheet2_22
+    21300046: MenuItems SpriteSheet2_23
+    21300048: MenuItems SpriteSheet2_24
+    21300050: MenuItems SpriteSheet2_25
+    21300052: MenuItems SpriteSheet2_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MenuItems SpriteSheet2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 292
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 292
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 292
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_5
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 243
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_6
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 243
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 243
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 195
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 195
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 195
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 146
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_14
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 146
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_15
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 146
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 97
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 97
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_19
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 97
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 49
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_22
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 49
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_23
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 49
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_25
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuItems SpriteSheet2_26
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 0
+        width: 140
+        height: 44
+      alignment: 4
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

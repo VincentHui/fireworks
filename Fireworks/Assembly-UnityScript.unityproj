@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BetaJester-JumpStartVR\Imports\NoTouchGUI Assets\Scripts\external scripts\DiveFPSControllerForNotouchGUI.js" />
+     <Compile Include="Assets\BetaJester-JumpStartVR\Imports\NoTouchGUI Assets\Scripts\external scripts\FPSInputControllerForNoTouchGUI.js" />
      <Compile Include="Assets\Fireworks\Scripts\Demo\GameObjectSpawner.js" />
      <Compile Include="Assets\Fireworks\Scripts\ParticleSystemSound.js" />
      <Compile Include="Assets\Fireworks\Scripts\SoundController.js" />
@@ -57,11 +59,14 @@
      <None Include="Assets\Fireworks\Scripts\Simple Particle Scale\Simple Particle Scale - Readme.txt" />
      <None Include="Assets\LightShafts\LightShafts-master\Depth.shader" />
      <None Include="Assets\Fireworks\Scripts\C# Scripts\- IMPORTANT - Version Change Readme.txt" />
+     <None Include="Assets\BetaJester-JumpStartVR\Imports\Typogenic\Demos\Arial\Arial.fnt" />
      <None Include="Assets\LightShafts\LightShafts-master\InterpolateAlongRays.shader" />
      <None Include="Assets\Fireworks\Fireworks - Readme.txt" />
      <None Include="Assets\Cardboard\Legacy\Resources\GUIScreen.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\BetaJester-JumpStartVR\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\LightShafts\LightShafts-master\Raymarch.shader" />
+     <None Include="Assets\BetaJester-JumpStartVR\Imports\Typogenic\Shaders\TypogenicUnlit.shader" />
      <None Include="Assets\Plugins\Legacy\Android\AndroidManifest.xml" />
      <None Include="Assets\Live_Music_Pack\Shaders\AlphaSelfIllum.shader" />
      <None Include="Assets\Cardboard\Resources\RadialUndistortionEffect.shader" />

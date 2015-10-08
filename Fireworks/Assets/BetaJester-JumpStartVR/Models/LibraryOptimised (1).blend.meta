@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 54df3e48dfa4b8d4c8862ab918120088
+timeCreated: 1444130342
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Columns
+    100002: Corridoor
+    100004: Corridoor_001
+    100006: Front_Grill_Quads
+    100008: Front_Main_Base_White_Grill
+    100010: //RootNode
+    100012: Main_Entrance
+    100014: Right_Back_Building
+    100016: Right_Front_Building
+    100018: Right_Front_Building_Left_Bottom_Windows
+    100020: Right_Front_Building_Left_Windows_Top
+    100022: Right_Front_Building_Right_Bottom_Wondows
+    100024: Right_Front_Building_Right_Top_Windows
+    100026: Right_Front_Building_Top_Windows
+    100028: Tower
+    100030: Tower_Back_Wall
+    100032: Tower_Base
+    100034: Tower_Left_Grills_001
+    100036: Tower_Top
+    100038: Window
+    100040: Window_001
+    400000: Columns
+    400002: Corridoor
+    400004: Corridoor_001
+    400006: Front_Grill_Quads
+    400008: Front_Main_Base_White_Grill
+    400010: //RootNode
+    400012: Main_Entrance
+    400014: Right_Back_Building
+    400016: Right_Front_Building
+    400018: Right_Front_Building_Left_Bottom_Windows
+    400020: Right_Front_Building_Left_Windows_Top
+    400022: Right_Front_Building_Right_Bottom_Wondows
+    400024: Right_Front_Building_Right_Top_Windows
+    400026: Right_Front_Building_Top_Windows
+    400028: Tower
+    400030: Tower_Back_Wall
+    400032: Tower_Base
+    400034: Tower_Left_Grills_001
+    400036: Tower_Top
+    400038: Window
+    400040: Window_001
+    2300000: Columns
+    2300002: Corridoor
+    2300004: Corridoor_001
+    2300006: Front_Grill_Quads
+    2300008: Front_Main_Base_White_Grill
+    2300010: Main_Entrance
+    2300012: Right_Back_Building
+    2300014: Right_Front_Building
+    2300016: Right_Front_Building_Left_Bottom_Windows
+    2300018: Right_Front_Building_Left_Windows_Top
+    2300020: Right_Front_Building_Right_Bottom_Wondows
+    2300022: Right_Front_Building_Right_Top_Windows
+    2300024: Right_Front_Building_Top_Windows
+    2300026: Tower
+    2300028: Tower_Back_Wall
+    2300030: Tower_Base
+    2300032: Tower_Left_Grills_001
+    2300034: Tower_Top
+    2300036: Window
+    2300038: Window_001
+    3300000: Columns
+    3300002: Corridoor
+    3300004: Corridoor_001
+    3300006: Front_Grill_Quads
+    3300008: Front_Main_Base_White_Grill
+    3300010: Main_Entrance
+    3300012: Right_Back_Building
+    3300014: Right_Front_Building
+    3300016: Right_Front_Building_Left_Bottom_Windows
+    3300018: Right_Front_Building_Left_Windows_Top
+    3300020: Right_Front_Building_Right_Bottom_Wondows
+    3300022: Right_Front_Building_Right_Top_Windows
+    3300024: Right_Front_Building_Top_Windows
+    3300026: Tower
+    3300028: Tower_Back_Wall
+    3300030: Tower_Base
+    3300032: Tower_Left_Grills_001
+    3300034: Tower_Top
+    3300036: Window
+    3300038: Window_001
+    4300000: Front_Grill_Quads
+    4300002: Tower_Left_Grills_001
+    4300004: Corridoor_001
+    4300006: Right_Front_Building_Left_Bottom_Windows
+    4300008: Right_Front_Building
+    4300010: Right_Front_Building_Top_Windows
+    4300012: Columns
+    4300014: Front_Main_Base_White_Grill
+    4300016: Window
+    4300018: Window_001
+    4300020: Right_Back_Building
+    4300022: Tower_Base
+    4300024: Tower_Top
+    4300026: Tower
+    4300028: Main_Entrance
+    4300030: Right_Front_Building_Left_Windows_Top
+    4300032: Right_Front_Building_Right_Bottom_Wondows
+    4300034: Right_Front_Building_Right_Top_Windows
+    4300036: Corridoor
+    4300038: Tower_Back_Wall
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
