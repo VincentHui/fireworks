@@ -5,42 +5,26 @@ using System.Collections.Generic;
 
 public class CrowdController : MonoBehaviour
 {
-
-    private string[] Animations = { "idle", "applause", "applause2", "celebration", "celebration2", "celebration3" };
-
     // Use this for initialization
-    Animation[] AudienceMembers;
+    Animator[] AudienceAnims;
 
     public List<AudioClip> CrowdNoises = new List<AudioClip>();
 
     bool Cheering;
-    bool source2Playing = false;
 
-    AudioSource Sounds1;
-    AudioSource Sounds2;
-
-    FadingAudioSource fadeSounds;
+    public GameObject audioSource;
 
     GameObject Head;
 
-    float realVol;
-
     void Start()
     {
-        Sounds1 = GetComponents<AudioSource>()[1];
-        Sounds2 = GetComponents<AudioSource>()[2];
-
-        realVol = 1;
-
         Head = GameObject.Find("Main Camera");
 
-        AudienceMembers = gameObject.GetComponentsInChildren<Animation>();
-        string thisAnimation = Animations[0];
+        AudienceAnims = GetComponentsInChildren<Animator>();
 
-        foreach (Animation anim in AudienceMembers)
+        for (int i = 0; i < transform.childCount; i++)
         {
-            LoopAnimation(thisAnimation, anim);
-            anim.transform.LookAt(new Vector3(Head.transform.position.x, anim.transform.position.y, Head.transform.position.z));            
+            transform.GetChild(i).LookAt(new Vector3(Head.transform.position.x, transform.GetChild(i).position.y, Head.transform.position.z));
         }
     }
 
@@ -59,24 +43,14 @@ public class CrowdController : MonoBehaviour
     {
         if (!Cheering)
         {
-            source2Playing = false;
-            Cheering = true;
+            if (!Cheering)
+            {
+                Cheering = true;
 
-            //Sounds.volume = realVol;
+                StartCoroutine(StartAnimation(0.5f));
+            }
 
-            StartCoroutine(playHappyCrowd(0, Sounds1));
-
-            StartCoroutine(StartAnimation(0.5f));
-        }
-        else if(!source2Playing)
-        {
-            source2Playing = true;
-            StartCoroutine(playHappyCrowd(0, Sounds2));
-        }
-        else
-        {
-            source2Playing = false;
-            StartCoroutine(playHappyCrowd(0, Sounds1));
+            StartCoroutine(playHappyCrowd(1, 0));
         }
     }
 
@@ -93,49 +67,33 @@ public class CrowdController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        foreach (Animation anim in AudienceMembers)
+        foreach (Animator anim in AudienceAnims)
         {
-            StartCoroutine(AnimationXtoY(anim, Random.Range(1, Animations.Length), 0, (Random.Range(0, 1.0f) + 3.0f)));
-        } 
+            anim.SetTrigger("Play");
+        }
     }
 
     IEnumerator AnimationXtoY(Animation anim, int X, int Y, float Time)
     {
-        LoopAnimation(Animations[X], anim);
+        //LoopAnimation(Animations[X], anim);
 
         yield return new WaitForSeconds(Time);
 
-        LoopAnimation(Animations[Y], anim);
+        //LoopAnimation(Animations[Y], anim);
     }
 
-    IEnumerator playHappyCrowd(float time, AudioSource source)
+    IEnumerator playHappyCrowd(float delay, float time)
     {
+        yield return new WaitForSeconds(delay);
+
+        GameObject go = Instantiate(audioSource);
+        go.transform.parent = transform;
+
+        AudioSource source = go.GetComponent<AudioSource>();
         source.clip = CrowdNoises[Random.Range(0, CrowdNoises.Count - 1)];
-        //Sounds.Play();
         source.PlayScheduled(time);
-        //fadeSounds.Fade(CrowdNoises[Random.Range(1, 3)], realVol, false);
 
-        //while (Sounds.volume < 0.5f)
-        //{
-        //    Sounds.volume = Mathf.Lerp(Sounds.volume, 1, Time.deltaTime);
-
-        //    yield return new WaitForEndOfFrame();
-        //}
-
-        yield return new WaitForSeconds(3.0f);
-
-        //while (Sounds.volume > 0.1)
-        //{
-        //    Sounds.volume = Mathf.Lerp(Sounds.volume, 0, Time.deltaTime);
-
-        //    new WaitForEndOfFrame();
-        //}        
-
-        //Sounds.clip = CrowdNoises[0];
-        //Sounds.Play();
-        //Sounds.volume = realVol;
-
-        //fadeSounds.Fade(CrowdNoises[0], realVol, false);
+        yield return new WaitForSeconds(4.0f);
 
         Cheering = false;
     }
