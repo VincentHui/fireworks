@@ -1,0 +1,17 @@
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.xml
+C:\FireworksGame\fireworks\Fireworks\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\FireworksGame\fireworks\Fireworks\obj\Debug\UnityVS.Fireworks.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\FireworksGame\fireworks\Fireworks\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\FireworksGame\fireworks\Fireworks\obj\Debug\Assembly-CSharp-firstpass.pdb
