@@ -12,6 +12,8 @@ public class Circle : MonoBehaviour
     public bool lookedAt = false;
     bool paused = false;
 
+    bool dead = false;
+
     void Start()
     {
         timeStamp = Time.time;
@@ -43,20 +45,36 @@ public class Circle : MonoBehaviour
 
     public void Poof()
     {
-        StartCoroutine(Delete());
+        //StartCoroutine(Delete());
 
-        foreach(ParticleSystem sys in GetComponentsInChildren<ParticleSystem>())
+        dead = true;
+
+        /*foreach(ParticleSystem sys in GetComponentsInChildren<ParticleSystem>())
         {
             sys.startSpeed = 2;
             sys.enableEmission = false;
             sys.playbackSpeed = 3;
-        }
+        }*/
     }
 
     public void Reset()
     {     
         timeStamp = Time.time;      
         //StartCoroutine(ResetTrail(GetComponentInChildren<TrailRenderer>()));
+    }
+
+    void Update()
+    {
+        if (dead)
+        {
+            Destroy(transform.parent.gameObject); 
+            
+            /*transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, Time.deltaTime * 2.0f);
+            if (transform.localScale.x < 0.01f)
+            {
+                Destroy(transform.parent.gameObject);
+            }*/
+        }
     }
 
     static IEnumerator ResetTrail(TrailRenderer trail)
